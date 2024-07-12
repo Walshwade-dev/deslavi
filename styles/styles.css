@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    width: 420px;
+    width: 375px;
     overflow: hidden;
 }
 
@@ -178,7 +178,7 @@ main {
 .sound-bars {
     position: absolute;
     left: 0;
-    bottom: 11rem;
+    bottom: 5rem;
     width: 100%;
     margin-top: -4rem;
     z-index: 10;
