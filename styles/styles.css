@@ -89,6 +89,7 @@ nav ul {
 }
 
 .hidden {
+    display: none;
     position: absolute;
     top: 6.5rem;
     bottom: 0;
