@@ -15,7 +15,8 @@ const menuListEl = document.querySelector('.menu-list');
 const miniMenuEl = document.querySelector(".mini-hamburger-menu");
 
 const videoSection = document.querySelector(".music-card-container");
-
+const currentYearEl = document.getElementById('currentYear');
+currentYearEl.innerText = new Date().getFullYear();
 
 
 hamburgerEl.addEventListener('click', () => {
