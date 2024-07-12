@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    width: 360px;
+    width: 420px;
     overflow: hidden;
 }
 
@@ -97,6 +97,7 @@ nav ul {
 }
 
 .mini-hamburger-menu ul {
+    z-index: 6;
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
@@ -198,8 +199,51 @@ main {
     margin: 1rem auto;
 }
 
+#music {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
 
-@media (min-width: 400px) {
+.music-card-container {
+    width: 100%;
+}
+
+.yt-video {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff0;
+    height: 16rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+.yt-video img {
+    width: 100%;
+    align-self: center;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.yt-video .cardtitle {
+    align-self: center;
+    padding: 0.2rem 2rem;
+    font-family: "montserrat", sans-serif;
+    background: linear-gradient(to bottom, #990099, #b40021);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+}
+
+
+
+
+@media (min-width: 420px) {
     .container {
         width: 100%;
     }
