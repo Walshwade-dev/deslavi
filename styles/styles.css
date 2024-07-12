@@ -245,6 +245,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    width: 375px;
     height: 3rem;
     background-color: #ff0;
     display: flex;
