@@ -208,6 +208,7 @@ main {
     padding: 2rem 2rem;
 }
 
+
 .section-container h2 {
     margin: 1rem auto;
 }
@@ -301,6 +302,7 @@ footer {
     .hamburger-menu-icon {
         display: none;
     }
+    
 
 
 }
@@ -328,9 +330,15 @@ footer {
     .secondary-main-img {
         position: absolute;
         left: 21%;
-        top: 25%;
+        top: 5%;
         margin: auto;
         width: 70%;
+    }
+
+
+    .secondary-main-img-2 {
+        top: 30%;
+        left: 5%;
     }
 
     .sound-bars {
@@ -342,7 +350,12 @@ footer {
         
     }
 
-    #bio, #music {
+    #bio {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #music {
         width: 80%;
         margin: 0 auto;
     }
