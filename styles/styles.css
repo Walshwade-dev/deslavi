@@ -167,12 +167,22 @@ main {
 }
 
 .secondary-main-img {
-    width: 100%;
+    width: 90%;
     height: 30%;
     position: absolute;
-    top: 4rem;
-    left: 0.5rem;
+    top: 5rem;
+    left: 1.6rem;
     z-index: -1;
+    filter: drop-shadow(16px 16px 20px #ffff00) invert(10%);
+}
+
+
+.secondary-main-img-2 {
+    position: absolute;
+    width: 90%;
+    top: 15rem;
+    left: 1.2rem;
+    filter: drop-shadow(16px 16px 20px #ff29ffda) invert(10%);
 }
 
 .sound-bars {
