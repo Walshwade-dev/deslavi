@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    width: 375px;
+    width: 412px;
     overflow: hidden;
 }
 
@@ -153,7 +153,7 @@ main {
 .main-img-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    overflow: hidden;
 }
 
 .main-img {
@@ -178,7 +178,7 @@ main {
 .sound-bars {
     position: absolute;
     left: 0;
-    bottom: 5rem;
+    bottom: -6rem;
     width: 100%;
     margin-top: -4rem;
     z-index: 10;
@@ -192,14 +192,38 @@ main {
 }
 
 .section-container {
-    margin: 0 2rem 4rem;
+    background-color: orange;
+    color: #500050;
+    width: 100%;
+    padding: 2rem 2rem;
 }
 
 .section-container h2 {
     margin: 1rem auto;
 }
 
+
+
+.section-container h2, .music-container h3 {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.section-container h4, .music-container h4{
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.section-container p, .music-container p {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 1rem;
+}
+
+
 #music {
+    background-color: #800080;
     color: white;
     width: 100%;
     display: flex;
@@ -211,6 +235,10 @@ main {
 
 .music-card-container {
     width: 100%;
+}
+
+.music-container h3, .music-container p {
+    margin: 1rem;
 }
 
 .yt-video {
@@ -263,7 +291,90 @@ footer {
     .hamburger-menu-icon {
         display: none;
     }
+
+
 }
+
+
+@media (min-width: 600px){
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .main-img-container{
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 5rem 0;
+    }
+
+    .main-img {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+
+    .secondary-main-img {
+        position: absolute;
+        left: 21%;
+        top: 25%;
+        margin: auto;
+        width: 70%;
+    }
+
+    .sound-bars {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(0%, 40%);
+        width: 100%;
+        
+    }
+
+    #bio, #music {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .section-container {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 5rem;
+    }
+
+    .section-container h2, .music-container h3 {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    .section-container h4, .music-container h4{
+        font-size: 2rem;
+    }
+
+    .section-container p, .music-container p {
+        font-size: 1.5rem;
+    }
+
+
+    .music-container {
+        width: 100%;
+        padding: 0 5rem;
+    }
+
+    .music-container h3, .music-container p {
+        margin: 1rem;
+    }
+
+    .yt-video {
+        width: 40rem;
+        height: 26rem;
+        margin: 5rem auto;
+    }
+
+}
+
+
 
 /* animations */
 @keyframes cssAnimation_0 {
