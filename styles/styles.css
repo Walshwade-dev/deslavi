@@ -353,7 +353,7 @@ main {
     margin-top: -1rem;
     background-color: #EEE;
     color: #2E0249;
-    border-top-right-radius: 2rem;
+    border-top-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;   
     padding: 0 2rem 2rem 2rem;
@@ -374,7 +374,7 @@ main {
 
 .inner-contact-form ul li {
     text-align: center;
-    padding: 0.5rem 0.6rem;
+    padding: 0.3rem 0.4rem;
     background-color: #EEE;
     border: 1px solid #2E0249;
     color: #2E0249;
