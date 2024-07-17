@@ -209,7 +209,7 @@ main {
 }
 
 
-.section-container h2 {
+.section-container h2 , .contact-container h4 {
     margin: 1rem auto;
 }
 
@@ -221,7 +221,7 @@ main {
     font-weight: 400;
 }
 
-.section-container h4, .music-container h4{
+.section-container h4, .music-container h4, .contact-container h4 {
     font-family: "Smooch Sans", sans-serif;
     font-size: 1.2rem;
     letter-spacing: 2px;
@@ -278,6 +278,171 @@ main {
     -webkit-text-fill-color: transparent;
     font-size: 1rem;
 }
+
+
+.contact {
+    padding: 1rem 2rem;
+    background-color: #2E0249;
+    color: #EEE;
+    text-align: left;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact-container h3, .contact-container .desc-header {
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.contact-container h4 { 
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.color-shift {
+    color: #a910a9;
+}
+
+
+.contact-info div {
+    display: flex;
+    gap: 1rem;
+    margin: 0.2rem 0;
+    font-family: "poppins", sans-serif;
+    padding: 1rem;
+    width: 60%;
+}
+
+.contact-info div:hover {
+    border: 2px solid #a910a9;
+    border-radius: 5px;
+    background-color: #570a57;
+    color: #FFF;
+}
+
+
+.color-container {
+    position: relative;
+    width: 100%;
+    height: 14.4rem;
+    z-index: 2;
+    background-color: inherit;
+}
+
+.outer-contact-form {
+    position: absolute;
+    background-color: #2E0249;
+    border-bottom-left-radius: 2rem;
+}
+
+.outer-contact-form::after {
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+    content: '';
+    width: 5rem;
+    height: 5rem;
+    background-color: #EEE;
+    z-index: -1;
+}
+
+.inner-contact-form {
+    margin-top: -1rem;
+    background-color: #EEE;
+    color: #2E0249;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;   
+    padding: 0 2rem 2rem 2rem;
+}
+
+.inner-contact-form h4 {
+    padding-top: 1rem;
+    font-weight: 600;
+}
+
+.inner-contact-form ul {
+    margin: 0 1rem 1rem 1rem;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.inner-contact-form ul li {
+    text-align: center;
+    padding: 0.5rem 0.6rem;
+    background-color: #EEE;
+    border: 1px solid #2E0249;
+    color: #2E0249;
+    border-radius: 0.5rem;
+}
+
+
+.inner-contact-form ul li:hover {
+    border: none;
+    background-color: #a910a9;
+    color: #EEE;
+}
+
+.fullname , .email {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    all: unset;
+    border-bottom: 1px solid #2e02498f;
+    color: #2E0249;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+}
+
+input::placeholder {
+    text-indent: 1rem;
+    color: #2e02498e;
+}
+
+input:focus, input:active {
+    border-bottom: 2px solid #a910a9;
+    color: #2E0249;
+}
+
+textarea {
+    all: unset;
+    margin: 0.5rem auto 0 0;
+    border: 1px solid #570a578e;
+    padding: 0 1px;
+    text-indent: 0.5rem;
+}
+
+#submit-btn {
+    all: unset;
+    font-family: "poppins", sans-serif;
+    margin: 2rem 0 0 0;
+    padding: 1rem 2rem;
+    background-color: #a910a9;
+    color: #EEE;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+
+#submit-btn .paper-plane-icon {
+    max-width: 1rem;
+}
+
+#submit-btn:hover, #submit-btn:active {
+    background-color: #570a57;
+}
+
 
 footer {
     position: sticky;
