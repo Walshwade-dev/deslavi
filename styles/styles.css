@@ -285,11 +285,14 @@ main {
     background-color: #2E0249;
     color: #EEE;
     text-align: left;
+    max-width: 80%;
 }
 
 .contact-container {
+    position: relative;
     display: flex;
     flex-direction: column;
+    text-align:left;
 }
 
 
@@ -332,6 +335,8 @@ main {
     background-color: inherit;
 }
 
+
+
 .outer-contact-form {
     position: absolute;
     background-color: #2E0249;
@@ -367,8 +372,10 @@ main {
 .inner-contact-form ul {
     margin: 0 1rem 1rem 1rem;
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    flex-direction: column;
     gap: 0.5rem;
 }
 
@@ -558,6 +565,88 @@ footer {
         width: 40rem;
         height: 26rem;
         margin: 5rem auto;
+    }
+
+    #contact {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: left; 
+    }
+
+    .contact-container-holder {    
+        width: 100%;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .outer-contact-form {
+        height: 190%
+    }
+
+
+    .outer-contact-form {
+        border-radius: 0;
+    }
+
+    .outer-contact-form::after{
+        display: none;
+    }
+
+
+    .inner-contact-form {
+        border-radius: 0.5rem;
+    }
+
+
+    .inner-contact-form ul {
+        max-width: 20rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inner-contact-form ul li {
+        max-width: 8rem;
+    }
+
+    .message {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .connect-container {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .connect-container a {
+        color: #fff;
+    }
+
+    .connect-container div {
+        position: relative;
+        background-color: #a910a9;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+
+    .connect-container div i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .connect-container div:hover{
+        border: 1px solid #a910a9;
+        background-color: #570a57;
     }
 
 }

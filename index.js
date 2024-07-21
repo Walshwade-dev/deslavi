@@ -30,12 +30,17 @@ fetch("https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&play
 .then(res => res.json())
 .then(data => {
     data.items.forEach(el => {
+
+      // Get the truncated title if it's longer than 23 characters
+      const truncatedTitle = el.snippet.title.length > 25 ? el.snippet.title.substring(0, 22) + '...' : el.snippet.title;
+
       videoSection.innerHTML += `
       <a target="_blank" href="https://www.youtube.com/watch?v=${el.snippet.resourceId.videoId}"
       class="yt-video">
         <img src="${el.snippet.thumbnails.maxres.url}"  />
-        <h3 class="cardtitle">${el.snippet.title}</h3>
+        <h3 class="cardtitle">${truncatedTitle}</h3>
       </a>
       `
     })
 })
+.catch(err => console.error('Error fetching data:', err));
