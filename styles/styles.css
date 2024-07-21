@@ -163,7 +163,7 @@ main {
     background-color: transparent;
     image-rendering: crisp-edges;
     filter: contrast(200%);
-    filter: drop-shadow(16px 16px 20px #ffff00) invert(10%);
+    filter: drop-shadow(16px 16px 20px purple) invert(10%);
 }
 
 .secondary-main-img {
@@ -173,7 +173,7 @@ main {
     top: 5rem;
     left: 1.6rem;
     z-index: -1;
-    filter: drop-shadow(16px 16px 20px #ffff00) invert(10%);
+    filter: drop-shadow(16px 16px 20px black) invert(10%);
 }
 
 
@@ -182,7 +182,7 @@ main {
     width: 90%;
     top: 15rem;
     left: 1.2rem;
-    filter: drop-shadow(16px 16px 20px #ff29ffda) invert(10%);
+    filter: drop-shadow(1px 1px 5px #ff29ffda) invert(10%);
 }
 
 .sound-bars {
@@ -192,7 +192,7 @@ main {
     width: 100%;
     margin-top: -4rem;
     z-index: 10;
-    filter: drop-shadow(10px -3px 5px #ff29ff);
+    filter: drop-shadow(1px 1px 4px #ff29ff);
 }
 
 
